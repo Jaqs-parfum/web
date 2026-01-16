@@ -4,44 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfumes</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif; }
+
+    body {
+      background:white;
+      color:#111;
+      padding:40px 60px;
+    }
+
+    nav {
+      display:flex;
+      justify-content:space-between;
+      font-size:14px;
+      margin-bottom:70px;
+      opacity:.8;
+    }
+
+    nav a {
+      text-decoration:none;
+      color:#111;
+      margin-right:22px;
+    }
+
+    .container {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:60px;
+    }
+
+    .left {
+      flex:1;
+      max-width:450px;
+    }
+
+    .left h1 {
+      font-size:32px;
+      font-weight:600;
+      margin-bottom:18px;
+      line-height:1.2;
+    }
+
+    .left p {
+      font-size:14px;
+      line-height:1.5;
+      color:#444;
+    }
+
+    .right {
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:18px;
+    }
+
+    .product-img {
+      width:350px;
+      height:450px;
+      background:#eee;
+      border-radius:10px;
+    }
+
+    button {
+      padding:10px 20px;
+      border:1px solid #111;
+      background:#111;
+      color:white;
+      font-size:13px;
+      cursor:pointer;
+      border-radius:4px;
+      transition:.2s;
+    }
+
+    button:hover {
+      opacity:.85;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>Perfumes</h1>
-    <p class="sub">Fragancias seleccionadas</p>
-  </header>
+  <nav>
+    <div>
+      <a href="#">HOME</a>
+      <a href="#">CATÁLOGO</a>
+      <a href="#">CONTACTO</a>
+    </div>
+    <div>CART (0)</div>
+  </nav>
 
-  <section class="grid">
-    <div class="card">
-      <div class="img"></div>
-      <h2>Hawas Fire</h2>
-      <p class="note">Ámbar • Aromático • Marino</p>
-      <button class="btn">Ver más</button>
+  <div class="container">
+    <div class="left">
+      <h1>RASASI HAWAS FIRE</h1>
+      <p>Ámbar • Aromático • Marino<br><br>
+      Fragancia cálida y elegante con salida herbal y fondo ambarino mineral.</p>
     </div>
 
-    <div class="card">
-      <div class="img"></div>
-      <h2>Hawas Ice</h2>
-      <p class="note">Fresco • Marino • Especiado</p>
-      <button class="btn">Ver más</button>
+    <div class="right">
+      <div class="product-img"></div>
+      <button>COMPRAR — $00.00</button>
     </div>
+  </div>
 
-    <div class="card">
-      <div class="img"></div>
-      <h2>Amber Oud Gold</h2>
-      <p class="note">Dulce • Ámbar • Floral</p>
-      <button class="btn">Ver más</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Perfumes</p>
-  </footer>
-
-<script src="script.js"></script>
 </body>
 </html>
